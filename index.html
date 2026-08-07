@@ -6,113 +6,129 @@
 <title>St. Michael's Church, Sammanasur</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
   body {
     font-family: Georgia, 'Times New Roman', serif;
-    background: linear-gradient(160deg, #eaf2fb 0%, #cfe0f7 50%, #a9c9ef 100%);
-    color: #123a66;
+    background: #ffffff;
+    color: #0d3b66;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* top band */
+  .band {
+    background: #0d4f9e;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  main {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px;
+    padding: 40px 20px;
   }
-  .card {
+
+  .content {
     text-align: center;
-    max-width: 580px;
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #cfe0f7;
-    border-radius: 24px;
-    padding: 48px 32px;
-    box-shadow: 0 20px 50px rgba(18, 58, 102, 0.15);
+    max-width: 600px;
   }
-  .icon {
-    margin-bottom: 20px;
-  }
+
   .icon svg {
-    width: 120px;
-    height: 120px;
-    filter: drop-shadow(0 4px 10px rgba(18, 58, 102, 0.2));
+    width: 110px;
+    height: 110px;
   }
+
   h1 {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 6px;
     color: #0d4f9e;
+    margin-top: 16px;
+    letter-spacing: 0.5px;
   }
+
   h2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     color: #3d76bb;
-    margin-bottom: 32px;
+    margin-top: 4px;
+    margin-bottom: 36px;
   }
-  .divider {
-    width: 90px;
-    height: 3px;
-    background: linear-gradient(90deg, #0d4f9e, #3d76bb, #a9c9ef);
-    margin: 0 auto 32px;
-    border-radius: 2px;
-  }
-  .message {
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 1.6;
+
+  .badge {
+    display: inline-block;
+    border: 2px solid #0d4f9e;
     color: #0d4f9e;
-    margin-bottom: 18px;
-    -webkit-text-stroke: 0.5px #0d4f9e;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 999px;
+    margin-bottom: 22px;
   }
+
   @keyframes blink {
     0%, 45% { opacity: 1; }
-    50%, 95% { opacity: 0.2; }
+    50%, 95% { opacity: 0.15; }
     100% { opacity: 1; }
   }
-  .blink {
-    animation: blink 1.6s infinite;
-  }
+  .blink { animation: blink 1.6s infinite; }
+
   .submessage {
     font-size: 15px;
     color: #3d5a7a;
     line-height: 1.7;
+    max-width: 440px;
+    margin: 0 auto;
   }
+
   footer {
-    margin-top: 40px;
-    font-size: 13px;
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
     color: #7392b8;
     letter-spacing: 0.5px;
+    border-top: 1px solid #eaf2fb;
   }
+
 </style>
 </head>
 <body>
-  <div class="card">
-    <div class="icon">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of an archangel with wings, a sword, and a halo">
-        <!-- wings -->
-        <path d="M100 60 C60 40 20 55 15 95 C40 85 65 90 85 105 Z" fill="#a9c9ef" opacity="0.9"/>
-        <path d="M100 60 C140 40 180 55 185 95 C160 85 135 90 115 105 Z" fill="#a9c9ef" opacity="0.9"/>
-        <!-- halo -->
-        <circle cx="100" cy="48" r="16" fill="none" stroke="#0d4f9e" stroke-width="4"/>
-        <!-- head -->
-        <circle cx="100" cy="58" r="13" fill="#eaf2fb"/>
-        <!-- body/robe -->
-        <path d="M78 78 C78 78 70 130 65 165 L135 165 C130 130 122 78 122 78 Z" fill="#3d76bb"/>
-        <path d="M92 78 L100 100 L108 78 Z" fill="#0d4f9e"/>
-        <!-- belt -->
-        <rect x="72" y="112" width="56" height="6" fill="#ffffff"/>
-        <!-- sword -->
-        <line x1="145" y1="60" x2="105" y2="130" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
-        <line x1="130" y1="80" x2="150" y2="70" stroke="#0d4f9e" stroke-width="5" stroke-linecap="round"/>
-        <circle cx="147" cy="63" r="5" fill="#0d4f9e"/>
-      </svg>
+  <div class="band">Parish website coming soon</div>
+
+  <main>
+    <div class="content">
+      <div class="icon">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of an archangel with wings, a sword, and a halo">
+          <path d="M100 60 C60 40 20 55 15 95 C40 85 65 90 85 105 Z" fill="#a9c9ef" opacity="0.9"/>
+          <path d="M100 60 C140 40 180 55 185 95 C160 85 135 90 115 105 Z" fill="#a9c9ef" opacity="0.9"/>
+          <circle cx="100" cy="48" r="16" fill="none" stroke="#0d4f9e" stroke-width="4"/>
+          <circle cx="100" cy="58" r="13" fill="#eaf2fb"/>
+          <path d="M78 78 C78 78 70 130 65 165 L135 165 C130 130 122 78 122 78 Z" fill="#3d76bb"/>
+          <path d="M92 78 L100 100 L108 78 Z" fill="#0d4f9e"/>
+          <rect x="72" y="112" width="56" height="6" fill="#ffffff"/>
+          <line x1="145" y1="60" x2="105" y2="130" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+          <line x1="130" y1="80" x2="150" y2="70" stroke="#0d4f9e" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="147" cy="63" r="5" fill="#0d4f9e"/>
+        </svg>
+      </div>
+
+      <h1>St. Michael's Church</h1>
+      <h2>Sammanasur</h2>
+
+      <div class="badge blink">This website is under construction</div>
+
+      <p class="submessage">We're working on bringing our parish online. Please check back soon for updates on services, events, and community news.</p>
     </div>
-    <h1>St. Michael's Church</h1>
-    <h2>Sammanasur</h2>
-    <div class="divider"></div>
-    <p class="message blink">This website is under construction</p>
-    <p class="submessage">We're working on bringing our parish online. Please check back soon for updates on services, events, and community news.</p>
-    <footer>&copy; St. Michael's Church, Sammanasur</footer>
-  </div>
+  </main>
+
+  <footer>&copy; St. Michael's Church, Sammanasur</footer>
 </body>
 </html>
