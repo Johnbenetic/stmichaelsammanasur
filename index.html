@@ -24,6 +24,7 @@
       background: #ffffff;
       line-height: 1.75;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
     a {
@@ -92,14 +93,14 @@
     }
 
     nav {
-      max-width: 1100px;
+      max-width: 1280px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 12px 14px;
+      padding: 10px 18px;
       color: #fff;
-      gap: 8px;
+      gap: 6px;
     }
 
     .brand {
@@ -133,18 +134,19 @@
 
     .navlinks {
       display: none;
-      gap: 4px;
-      font-size: 13px;
+      gap: 2px;
+      font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.2px;
+      letter-spacing: 0px;
       flex: 1;
       justify-content: center;
+      flex-wrap: nowrap;
     }
 
     .navlinks a {
-      padding: 8px 11px;
+      padding: 7px 8px;
       white-space: nowrap;
-      border-radius: 8px;
+      border-radius: 6px;
       transition: background 0.15s, color 0.15s;
     }
 
@@ -279,12 +281,13 @@
         display: none;
       }
 
-      .mobile-menu {
+      .mobile-menu,
+      .menu-overlay {
         display: none !important;
       }
 
       .brand {
-        font-size: 16px;
+        font-size: 15px;
       }
     }
 
@@ -642,13 +645,15 @@
     /* SCHEDULE */
     .table-wrap {
       border-radius: 16px;
-      overflow: hidden;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
       box-shadow: 0 8px 26px rgba(13, 79, 158, 0.10);
       border: 1px solid #e3edf9;
     }
 
     table.schedule {
       width: 100%;
+      min-width: 480px;
       border-collapse: collapse;
       font-size: 14px;
       background: #fff;
@@ -657,16 +662,20 @@
     table.schedule th {
       background: linear-gradient(90deg, #0d4f9e, #1c6fd4);
       color: #fff;
-      padding: 14px 16px;
+      padding: 12px 14px;
       text-align: left;
       font-weight: 700;
       letter-spacing: 0.3px;
+      word-break: break-word;
+      overflow-wrap: break-word;
     }
 
     table.schedule td {
-      padding: 14px 16px;
+      padding: 12px 14px;
       border-bottom: 1px solid #eaf2fb;
       color: #3d5a7a;
+      word-break: break-word;
+      overflow-wrap: break-word;
     }
 
     table.schedule tr:last-child td {
@@ -682,8 +691,14 @@
     }
 
     /* ROLL OF HONOUR TABLE */
+    table.roll-table {
+      min-width: 480px;
+    }
+
     table.roll-table td {
       vertical-align: middle;
+      word-break: break-word;
+      overflow-wrap: break-word;
     }
 
     .roll-photo {
